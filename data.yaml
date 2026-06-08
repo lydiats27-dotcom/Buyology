@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 10
+names: ['Pepsi', 'Pizza', 'burger', 'coke', 'cold_coffee', 'fries', 'garlic_bread', 'nuggets', 'sprite', 'wrap']
+
+roboflow:
+  workspace: comedkares-workspace
+  project: comedkares-workspace
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/comedkares-workspace/comedkares-workspace/dataset
