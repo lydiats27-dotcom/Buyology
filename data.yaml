@@ -1,13 +1,13 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: train/images
+val: valid/images
+test: test/images
 
 nc: 10
-names: ['Pepsi', 'Pizza', 'burger', 'coke', 'cold_coffee', 'fries', 'garlic_bread', 'nuggets', 'sprite', 'wrap']
+names: ['burger', 'coke', 'cold_coffee', 'fries', 'garlic_bread', 'nuggets', 'pepsi', 'pizza', 'sprite', 'wrap']
 
 roboflow:
   workspace: comedkares-workspace
-  project: comedkares-workspace
-  version: dataset
-  license: Private
-  url: https://app.roboflow.com/comedkares-workspace/comedkares-workspace/dataset
+  project: qsr_food_detection
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/comedkares-workspace/qsr_food_detection/dataset/1

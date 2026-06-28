@@ -3,6 +3,10 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import pytesseract
+import pandas as pd
+
+from verification import verify_order
+from logger import log_detection
 
 # --------------------------------
 # CONFIGURATION
@@ -68,7 +72,7 @@ if receipt_file:
 
     st.image(
         receipt_img,
-        use_container_width=True
+        width="stretch"
     )
 
     ocr_text = pytesseract.image_to_string(
@@ -115,7 +119,7 @@ if food_file:
         st.image(
             plotted_image,
             channels="BGR",
-            use_container_width=True
+            width="stretch"
         )
 
         for box in r.boxes:
@@ -150,19 +154,28 @@ if receipt_file and food_file:
 
         st.write(detected_items)
 
-    missing = (
-        set(expected_order)
-        - set(detected_items)
+    # Verify Order
+    result = verify_order(
+        expected_order,
+        detected_items
     )
 
-    extra = (
-        set(detected_items)
-        - set(expected_order)
+    status = result["status"]
+    missing = result["missing"]
+    extra = result["extra"]
+
+    # Save Detection Log
+    log_detection(
+        expected_order,
+        detected_items,
+        status,
+        missing,
+        extra
     )
 
     st.subheader("Verification Result")
 
-    if not missing and not extra:
+    if status == "Verified":
 
         st.success(
             "✅ Order Verified Successfully!"
@@ -173,12 +186,51 @@ if receipt_file and food_file:
         if missing:
 
             st.error(
-                f"❌ Missing Items: {list(missing)}"
+                f"❌ Missing Items: {missing}"
             )
 
         if extra:
 
             st.warning(
-                f"⚠️ Extra Items: {list(extra)}"
+                f"⚠️ Extra Items: {extra}"
             )
+
+    # --------------------------------
+    # SUMMARY
+    # --------------------------------
+
+    st.divider()
+
+    st.subheader("Verification Summary")
+
+    st.write(f"**Status:** {status}")
+
+    st.write(f"**Expected Items:** {len(expected_order)}")
+
+    st.write(f"**Detected Items:** {len(detected_items)}")
+
+# --------------------------------
+# DETECTION HISTORY
+# --------------------------------
+
+st.divider()
+
+st.subheader("📜 Detection History")
+
+try:
+
+    history = pd.read_csv("logs.csv")
+
+    st.dataframe(
+        history,
+        width="stretch"
+    )
+
+except FileNotFoundError:
+
+    st.info(
+        "No detection history available yet."
+    )
+
+
 
