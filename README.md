@@ -38,13 +38,14 @@ Artificial Intelligence (AI), Computer Vision, YOLOv8, Object Detection, Edge Co
 
 ## 1. Introduction
 
-Holographic imaging in the soft X-ray (SXR) and extreme ultraviolet (EUV) spectral regions has been demonstrated in a series of landmark experiments utilizing both EUV/SXR lasers and synchrotron radiation sources. The fundamental principle underpinning these efforts is the use of coherent short-wavelength illumination to surpass the spatial resolution ceiling imposed by conventional visible-light optics — a boundary that constrains virtually all standard optical microscopy techniques.
 
-The first realization of soft X-ray laser holography was accomplished at Lawrence Livermore National Laboratory using a large-scale laser facility, establishing the feasibility of the approach. Subsequent work extended this to the holographic recording of biological samples and sub-micron structures using soft X-ray radiation from synchrotron facilities [1], [2]. These efforts collectively demonstrated that short-wavelength coherent illumination is a powerful route to nanometer-scale imaging.
+**SmartQSR AI** is an AI-powered real-time order verification system designed to improve order accuracy in Quick Service Restaurants (QSRs). By combining **Computer Vision**, **Edge Computing**, and **Artificial Intelligence**, the system automatically verifies prepared food orders before they are handed to customers, helping restaurants reduce packing errors, food wastage, refunds, and customer complaints.
 
-With the maturation of compact EUV sources based on high harmonic generation (HHG), table-top in-line EUV holography with spatial resolutions of 7.9 μm and 0.8 μm has been demonstrated outside traditional large-facility environments. Time-resolved holographic imaging exploiting the ultrashort pulse duration of HHG sources has further enabled study of ultrafast surface deformation dynamics at lateral resolutions on the order of 100 nm [3], [5]. The recent advent of compact, coherent, table-top EUV laser sources [6] opens further opportunities for novel, nanometer-scale imaging schemes accessible to individual research laboratories.
+The solution uses a **Raspberry Pi** equipped with a **USB webcam** to capture images of prepared food trays. A custom-trained **YOLOv8** object detection model identifies food items in real time and compares them against the customer's expected order received from the Point of Sale (POS) system through a **FastAPI** backend. The system instantly verifies the order and provides visual feedback using **LED indicators** and an **active buzzer**, allowing restaurant staff to correct mistakes before dispatch.
 
-In this paper, we present a proof-of-principle experiment demonstrating that full three-dimensional volumetric imaging can be obtained from a single high numerical aperture (NA) hologram recorded with a compact table-top EUV laser. By numerically reconstructing Gabor holograms across a range of image planes — sweeping the propagation distance in the Fresnel reconstruction code — a robust numerical optical sectioning technique is established and verified on a purpose-fabricated test object.
+SmartQSR AI also features a **React-based dashboard** for order generation, verification monitoring, and logging. Trained on a custom dataset of **4,100+ labeled images** across **10 food categories**, the system delivers fast and accurate object detection while remaining lightweight enough to run on edge devices.
+
+**SmartQSR AI** aims to make restaurant operations smarter by delivering accurate, efficient, and scalable order verification through artificial intelligence.
 
 ---
 
