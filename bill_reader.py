@@ -5,24 +5,35 @@ pytesseract.pytesseract.tesseract_cmd = (
     r"C:\Program Files\tesseract.exe"
 )
 
-menu_items = [
+MENU_ITEMS = [
     "burger",
     "fries",
-    "coke"
+    "coke",
+    "pizza",
+    "pepsi",
+    "sprite",
+    "nuggets",
+    "garlic_bread",
+    "cold_coffee",
+    "wrap"
 ]
 
-img = Image.open("receipt_1.png")
 
-text = pytesseract.image_to_string(img).lower()
+def read_receipt(image_path):
 
-print("OCR TEXT:")
-print(text)
+    img = Image.open(image_path)
 
-expected_order = []
+    text = pytesseract.image_to_string(
+        img
+    ).lower()
 
-for item in menu_items:
-    if item in text:
-        expected_order.append(item)
+    expected_order = []
 
-print("\nExpected Order:")
-print(expected_order)
+    for item in MENU_ITEMS:
+
+        if item in text:
+
+            expected_order.append(item)
+
+    return expected_order
+

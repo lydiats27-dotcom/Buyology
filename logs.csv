@@ -1,1 +1,65 @@
 Timestamp,Expected Order,Detected Order,Status,Missing Items,Extra Items
+2026-06-11 12:42:33,"burger, fries, coke","burger, wrap, coke",Failed,fries,wrap
+2026-06-11 12:42:56,"burger, fries, coke",,Failed,"fries, coke, burger",
+2026-06-11 12:43:36,burger,burger,Verified,,
+2026-06-11 13:10:40,"burger, fries, coke","burger, fries",Failed,coke,
+2026-06-11 13:12:42,"burger, burger, fries, coke","burger, fries",Failed,coke,
+2026-06-11 13:13:06,"burger, burger, fries, coke","burger, fries",Failed,coke,
+2026-06-11 13:13:17,"burger, fries","burger, fries",Verified,,
+2026-06-11 13:20:01,"burger, burger, fries, coke","burger, fries",Failed,"burger, coke",
+2026-06-11 13:20:29,"burger, burger, burger, fries, fries, coke, coke, wrap, nuggets, pepsi","burger, fries",Failed,"burger, burger, fries, coke, coke, wrap, nuggets, pepsi",
+2026-06-11 13:31:18,"burger, burger, burger, fries, fries, fries, coke, coke, wrap","burger, fries",Failed,"burger, burger, fries, fries, coke, coke, wrap",
+2026-06-11 13:55:08,"burger, burger, fries, fries, coke, coke","burger, fries",Failed,"burger, fries, coke, coke",
+2026-06-11 13:56:21,"burger, burger, fries, fries, coke, coke","burger, fries",Failed,"burger, fries, coke, coke",
+2026-06-11 13:56:27,"burger, fries","burger, fries",Verified,,
+2026-06-11 13:56:40,burger,"burger, fries",Failed,,fries
+2026-06-11 13:56:58,"burger, fries, coke","burger, fries",Failed,coke,
+2026-06-11 14:53:45,"burger, fries, coke, wrap",fries,Failed,"burger, coke, wrap",
+2026-06-11 14:54:11,fries,fries,Verified,,
+2026-06-12 11:44:24,"burger, burger, fries, fries, coke","burger, fries",Failed,"burger, fries, coke",
+2026-06-12 11:47:28,"burger, fries, nuggets",,Failed,"burger, fries, nuggets",
+2026-06-12 11:47:37,"burger, fries, nuggets",,Failed,"burger, fries, nuggets",
+2026-06-12 11:47:49,"burger, fries, nuggets",,Failed,"burger, fries, nuggets",
+2026-06-12 12:37:34,"burger, fries, coke, wrap",,Failed,"burger, fries, coke, wrap",
+2026-06-12 12:37:49,"burger, fries, coke, wrap","burger, wrap, coke",Failed,fries,
+2026-06-12 12:38:08,"burger, fries, coke, wrap",burger,Failed,"fries, coke, wrap",
+2026-06-12 12:38:48,fries,"burger, fries",Failed,,burger
+2026-06-12 12:39:39,fries,burger,Failed,fries,burger
+2026-06-12 14:52:39,"burger, burger, fries, coke","burger, fries",Failed,"burger, coke",
+2026-06-23 15:48:09,"burger, fries",burger,Failed,fries,
+2026-06-23 16:09:45,"burger, fries",,Failed,"burger, fries",
+2026-06-23 16:10:11,"burger, fries",burger,Failed,fries,
+2026-06-23 16:11:17,"burger, fries",,Failed,"burger, fries",
+2026-06-23 16:11:30,"burger, fries",,Failed,"burger, fries",
+2026-06-23 16:12:03,"burger, fries",,Failed,"burger, fries",
+2026-06-25 15:05:02,"burger, fries",,Failed,"burger, fries",
+2026-06-25 15:05:18,"burger, fries",fries,Failed,burger,
+2026-06-25 15:05:32,"burger, fries",fries,Failed,burger,
+2026-06-25 15:06:04,"burger, fries","pepsi, wrap",Failed,"burger, fries","pepsi, wrap"
+2026-06-25 15:06:21,"burger, fries",pepsi,Failed,"burger, fries",pepsi
+2026-06-25 15:06:45,"burger, fries",burger,Failed,fries,
+2026-06-25 15:10:12,"burger, fries",burger,Failed,fries,
+2026-06-25 15:10:30,"burger, fries",fries,Failed,burger,
+2026-06-25 15:12:28,"burger, fries","burger, fries",Verified,,
+2026-06-25 15:14:08,"burger, fries","burger, fries",Verified,,
+2026-06-25 15:14:35,"burger, fries","burger, fries",Verified,,
+2026-06-25 15:14:59,burger,,Failed,burger,
+2026-06-25 15:17:39,burger,burger,Verified,,
+2026-06-25 15:19:17,burger,"burger, fries",Failed,,fries
+2026-06-25 15:21:20,"burger, fries, pepsi",burger,Failed,"fries, pepsi",
+2026-06-25 15:23:49,"burger, fries, pepsi",burger,Failed,"fries, pepsi",
+2026-06-25 15:24:15,"burger, fries, pepsi","burger, pepsi",Failed,fries,
+2026-06-25 15:24:37,"burger, fries, pepsi",burger,Failed,"fries, pepsi",
+2026-06-25 15:25:42,"burger, fries, pepsi","burger, fries",Failed,pepsi,
+2026-06-25 15:33:19,"burger, fries, pepsi","burger, fries, pepsi",Verified,,
+2026-06-25 15:34:44,"burger, fries, coke, pepsi","burger, fries",Failed,"coke, pepsi",
+2026-06-25 15:35:46,"burger, fries, coke, pepsi","wrap, pepsi",Failed,"burger, fries, coke",wrap
+2026-06-25 15:37:15,"burger, fries, coke, pepsi","burger, fries",Failed,"coke, pepsi",
+2026-06-25 15:39:04,"burger, fries, coke","burger, fries, pepsi",Failed,coke,pepsi
+2026-06-25 15:49:26,"burger, fries, coke","burger, pepsi, fries",Failed,coke,pepsi
+2026-06-25 15:51:24,"burger, burger, burger",burger,Failed,"burger, burger",
+2026-06-25 16:08:31,"burger, burger, burger","burger, burger",Failed,burger,
+2026-06-25 16:10:10,"burger, burger, pepsi, pepsi, fries, fries","burger, burger, fries, pepsi",Failed,"pepsi, fries",
+2026-06-25 16:11:43,"burger, pepsi, fries","fries, fries, pepsi",Failed,burger,fries
+2026-06-25 16:12:11,"burger, pepsi, fries","burger, wrap",Failed,"pepsi, fries",wrap
+2026-06-25 16:12:32,"burger, pepsi, fries","burger, fries, pepsi",Verified,,
