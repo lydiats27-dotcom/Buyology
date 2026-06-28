@@ -12,7 +12,7 @@
 
 <div align="center">
 
-**Lydia Thangam S**, Msc Big Data Analytics, 252BDA24 &nbsp;·&nbsp; **<<Author 2>>**, Dept, USN &nbsp;·&nbsp;**<<Author 3>>**, Dept, USN &nbsp;·&nbsp; **<<Author 4>>**, Dept, USN &nbsp;·&nbsp; **<<Author 5>>**, Dept, USN
+**Lydia Thangam S**, Msc Big Data Analytics, 252BDA24 &nbsp;·&nbsp; **Manish J.C**, Msc Big Data Analytics, 252BDA59 &nbsp;·&nbsp;**P R Vishnu Prasad**, MCA, 253MCA26 &nbsp;·&nbsp; **Steffi Merlin P**, MCA, 253MCA13 &nbsp;·&nbsp; **Adone Kurian**, MCA, 253MCA19
 
 </div>
 
