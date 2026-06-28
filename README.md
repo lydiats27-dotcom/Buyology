@@ -67,15 +67,14 @@ The project demonstrates how modern AI technologies can be effectively deployed 
 
 ## 3. Problem Statement
 
-Despite progress in EUV and SXR holographic imaging, three key challenges have limited the practical deployment of three-dimensional nanoscale holographic imaging:
 
-**i. Source accessibility.** The highest-resolution demonstrations to date have relied on synchrotron radiation or large national-laboratory laser facilities, placing them beyond the reach of most research groups. Compact table-top alternatives have been explored but their capability for full 3D volumetric imaging had not been systematically established.
+Quick Service Restaurants (QSRs) operate in fast-paced environments where speed and efficiency are critical. During peak hours, staff must prepare and package hundreds of customer orders within a short period, making manual verification both challenging and unreliable. As a result, incorrect or incomplete orders are common, leading to customer dissatisfaction, increased refunds, food wastage, and additional operational costs.
 
-**ii. Depth discrimination from a single exposure.** Conventional holographic reconstruction yields a two-dimensional image at a fixed reconstruction distance. Extracting three-dimensional depth information from a single hologram — without acquiring multiple exposures or employing interferometric multi-pass configurations — poses a fundamental reconstruction challenge.
+Current verification processes rely heavily on human intervention, which is prone to errors caused by fatigue, distractions, and high workloads. Existing restaurant management systems primarily focus on billing, order processing, and inventory management but do not provide an automated mechanism to verify whether the correct food items have been packed before dispatch.
 
-**iii. Resolution benchmarking.** Quantitative, reproducible assessment of lateral and depth resolution in numerically reconstructed EUV holograms requires rigorous image-analysis protocols. Prior work lacked a standardized methodology for resolution verification at the nanometer scale using table-top sources.
+There is a growing need for an intelligent, affordable, and real-time order verification system that can automatically compare prepared food items with the customer's order before it leaves the restaurant.
 
-This work addresses all three challenges: it establishes that a compact capillary EUV laser is sufficient for high-NA holographic recording, demonstrates numerical optical sectioning as a robust approach to single-exposure 3D imaging, and applies wavelet image decomposition to provide quantitative resolution metrics.
+**SmartQSR AI** addresses this challenge by leveraging Artificial Intelligence, Computer Vision, and Edge Computing to detect food items in real time using a Raspberry Pi and a custom-trained YOLOv8 model. The system compares the detected items with the expected order, instantly alerts staff to any discrepancies through LED indicators and a buzzer, and helps ensure that every order is accurate before delivery, thereby improving operational efficiency and enhancing customer satisfaction.
 
 ---
 
