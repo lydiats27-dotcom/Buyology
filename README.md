@@ -8,7 +8,7 @@
 
 ---
 
-# {{Project Title}}
+# SmartQSR AI: AI-Powered Real-Time Order Verification System for Quick Service Restaurants
 
 <div align="center">
 
