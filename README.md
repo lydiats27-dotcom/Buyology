@@ -32,7 +32,7 @@ SmartQSR AI demonstrates how artificial intelligence can automate quality assura
 
 ## Keywords
 
-Extreme Ultraviolet (EUV), Holography, Gabor Hologram, Numerical Optical Sectioning, Fresnel Propagation, High Numerical Aperture, Soft X-ray Laser, Three-Dimensional Imaging, Atomic Force Microscopy, Wavelet Image Decomposition.
+Artificial Intelligence (AI), Computer Vision, YOLOv8, Object Detection, Edge Computing, Raspberry Pi, FastAPI, React.js, OpenCV, Quick Service Restaurant (QSR), Order Verification, Food Detection, Smart Restaurant Automation, Real-Time Detection, Embedded Systems
 
 ---
 
